@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu & Reservation</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <h1 class="logo">Delicious Dining</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <div class="content">
+            <div class="content-left">
+                <div class="info">
+                    <h2>Order Your Best <br>Food anytime!</h2>
+                    <p>Hey, Our Delicious food is waiting for you😋, <br> 
+                        We are always near to you with fresh item of food🤤</p>
+                </div>
+            </div>
+            <div class="content-right">
+                <img src="h1img.jpg" alt="image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Welcome to Delicious Dining!</h2>
+        <p>Delicious meals crafted with love😍</p>
+        <a href="#menu" class="btn">View Menu</a>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <h2>Our Menu😉</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="img1.jpg" alt="Dish 1">
+                <h3>Grilled Salmon</h3>
+                <p>Freshly grilled salmon with a side of vegetables and creamy sauce</p>
+                <span>₹500.00</span>
+            </div>
+            <div class="menu-item">
+                <img src="img2.jpg" alt="Dish 2">
+                <h3>Vegetarian Pasta</h3>
+                <p>Delicious pasta with organic vegetables and homemade tomato sauce</p>
+                <span>₹250.00</span>
+            </div>
+            <div class="menu-item">
+                <img src="img3.webp" alt="Dish 3">
+                <h3>Cheeseburger</h3>
+                <p>A juicy mutton patty with melted cheddar cheese, lettuce, and tomato</p>
+                <span>₹180.00</span>
+            </div>
+            <div class="menu-item">
+                <img src="img4.jpg" alt="Chocolate Lava Cake" />
+                <h3>Chocolate Lava Cake</h3>
+                <p>A rich chocolate cake with molten lava center, served with vanilla ice cream</p>
+                <span>₹200.00</span>
+            </div>
+            <div class="menu-item">
+                <img src="img5.webp" alt="Dish 5">
+                <h3>Ice-Cream</h3>
+                <p>Ice cream parlors sell ice cream by the scoop in cones or cups</p>
+                <span>₹150.00</span>
+            </div>
+            <div class="menu-item">
+                <img src="img6.jpg" alt="Dish 6">
+                <h3>Fruit Juice</h3>
+                <p>Sip the sunshine: fruit juice, a vibrant elixir of nature's goodness</p>
+                <span>₹80.00</span>
+            </div>
+            <div class="menu-item">
+                <img src="img7.webp" alt="Dish 6">
+                <h3>Full Meals</h3>
+                <p>The cuisine is majorly dominated by the use of rice, lentils, spices such as tamarind, coriander, chili pepper, cinnamon, curry leaves, cardamom, coconut and much more.</p>
+                <span>₹200.00</span>
+            </div>
+            <div class="menu-item">
+                <img src="img8.webp" alt="Dish 6">
+                <h3>MilkShake</h3>
+                <p>A milkshake is a sweet beverage made by blending milk, ice cream, and flavorings or sweeteners</p>
+                <span>₹120.00</span>
+            </div>
+            <div class="menu-item">
+                <img src="img9.jpg" alt="Dish 6">
+                <h3>Chicken Biryani</h3>
+                <p>Chicken Biryani is a mixed rice dish popular in South Asia, made with rice, meat  and spices</p>
+                <span>₹270.00</span>
+            </div>
+            <div class="menu-item">
+                <img src="img10.jpg" alt="Dish 6">
+                <h3>Chicken Tandoori</h3>
+                <p>Tandoori chicken is a dish made from chicken marinated in yogurt and spices and roasted in a tandoor, a cylindrical clay oven</p>
+                <span>₹200.00</span>
+            </div>
+            <div class="menu-item">
+                <img src="img11.jpg" alt="Dish 6">
+                <h3>Mutton Kola Urundai</h3>
+                <p>Delicious and crispy mutton keema kola urundai which can be served as a appetizer for any parties. These balls turn out crispy</p>
+                <span>₹150.00</span>
+            </div>
+            <div class="menu-item">
+                <img src="img12.jpg" alt="Dish 6">
+                <h3>Mutton Biryani</h3>
+                <p>Mutton Biryani is a mixed rice dish popular in South Asia, made with rice, meat  and spices</p>
+                <span>₹350.00</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation">
+        <h2>Book a Table🥂</h2>
+        <form action="submit_reservation" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Email Address" required>
+            <label for="date">Reservation Date:</label>
+            <input type="date" id="date" name="date" required />
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required />
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" max="10" required />
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required />
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us👨‍🍳</h2>
+        <p>
+            At Delicious Dining, we believe in offering high-quality food in a warm
+            and inviting atmosphere. Our chefs use the freshest ingredients to create
+            mouth-watering dishes that will leave you coming back for more.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 style="color: red;">Contact Us📞</h2>
+        <p>Email: deliciousdining@gmail.com</p>
+        <p>Phone: +91-9876543210</p>
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" class="social-icon">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://wa.me/1234567890" target="_blank" class="social-icon">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy;2025 Delicious Dining. Follow us on social media. All Rights Reserved.</p>
+    </footer>
+    
+</body>
+</html>
